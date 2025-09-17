@@ -12,21 +12,31 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { AppLogo } from "@/components/icons"
 
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-background">
         <div className="w-full max-w-md p-8 space-y-8">
             <div className="flex flex-col items-center text-center">
                 <AppLogo className="h-10 w-10 text-primary mb-4" />
                 <CardHeader>
-                    <CardTitle className="text-3xl font-bold font-headline">Welcome Back</CardTitle>
+                    <CardTitle className="text-3xl font-bold font-headline">Create an Account</CardTitle>
                     <CardDescription className="text-muted-foreground">
-                        Enter your credentials to access your account
+                        Enter your information to create an account
                     </CardDescription>
                 </CardHeader>
             </div>
             <Card>
                 <CardContent className="space-y-4 pt-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="grid gap-2">
+                    <Label htmlFor="first-name">First name</Label>
+                    <Input id="first-name" placeholder="Max" required />
+                  </div>
+                  <div className="grid gap-2">
+                    <Label htmlFor="last-name">Last name</Label>
+                    <Input id="last-name" placeholder="Robinson" required />
+                  </div>
+                </div>
                 <div className="grid gap-2">
                     <Label htmlFor="email">Email</Label>
                     <Input
@@ -37,26 +47,18 @@ export default function LoginPage() {
                     />
                 </div>
                 <div className="grid gap-2">
-                    <div className="flex items-center">
                     <Label htmlFor="password">Password</Label>
-                    <Link
-                        href="#"
-                        className="ml-auto inline-block text-sm underline"
-                    >
-                        Forgot your password?
-                    </Link>
-                    </div>
                     <Input id="password" type="password" required />
                 </div>
                 <Button type="submit" className="w-full">
-                    Login
+                    Create Account
                 </Button>
                 </CardContent>
             </Card>
             <div className="mt-4 text-center text-sm">
-                Don&apos;t have an account?{" "}
-                <Link href="/signup" className="underline">
-                Sign up
+                Already have an account?{" "}
+                <Link href="/login" className="underline">
+                Sign in
                 </Link>
             </div>
         </div>
