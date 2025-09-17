@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "template-minimalist-portfolio",
+      "description": "A preview of the minimalist portfolio template.",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "minimalist abstract"
+    },
+    {
+      "id": "template-bold-startup",
+      "description": "A preview of the bold startup template.",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "modern business"
+    },
+    {
+      "id": "template-creative-studio",
+      "description": "A preview of the creative studio template.",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "creative art"
+    },
+    {
+      "id": "about-me-image",
+      "description": "Placeholder image for an about me section.",
+      "imageUrl": "https://picsum.photos/seed/104/400/400",
+      "imageHint": "portrait person"
+    }
+  ]
 }
